@@ -1,0 +1,18 @@
+<section>
+  <div class="container">
+    <h1>Neem</h1>
+    <nav class="nav">
+      {{#linkTo 'index'}}Home{{/linkTo}}
+
+      {{#if isAuthenticated}}
+        <a href="#">{{currentUser.email}}</a>
+        <a href="#" {{action 'logout'}}>Logout</a>
+      {{else}}
+        {{#linkTo 'users.new'}}Register{{/linkTo}}
+        {{#linkTo 'sessions.new'}}Login{{/linkTo}}
+      {{/if}}
+    </nav>
+  </div>
+</section>
+  
+{{outlet}}

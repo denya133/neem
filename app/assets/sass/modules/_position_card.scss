@@ -1,0 +1,12 @@
+.position_card {
+  margin-bottom: $gutter;
+  & > .inner {
+    padding: $line-height;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    @extend %black_white_light-grey;
+  }
+  .position_description {
+    margin-bottom: $line-height;
+  }
+}

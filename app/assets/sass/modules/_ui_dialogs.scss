@@ -1,0 +1,33 @@
+.ui-dialog {
+  @extend %black_white_mid-grey;
+  border-width: 0.2em;
+  border-style: solid;
+  padding: $gutter * 0.75;
+  outline: none;
+  @include box-shadow(0 1px 2px rgba(black, .15), 0 1px 1px 9999px rgba(black, .75));
+
+  .ui-dialog-titlebar {
+    font-size: 1.2em;
+    margin-bottom: $line-height;
+  }
+
+  .ui-dialog-content {
+    height: auto !important;
+  }
+
+  .ui-dialog-titlebar-close {
+    position: absolute;
+    top: $gutter * 0.75;
+    right: $gutter * 0.75;
+    margin: 0;
+
+    @extend .icon-close;
+    &:before {
+      font-family: "Icomoon";
+    }
+  }
+
+  input[type="submit"] {
+    margin-bottom: 0;
+  }
+}
