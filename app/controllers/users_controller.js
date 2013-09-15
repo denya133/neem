@@ -7,8 +7,8 @@ exports.session = function(req, res) {
   User.findOne({ email: req.body.email })
   .populate('apikey')
   .exec(function(err, user){
-    if (err) { res.json(err) }
-    if (!user) { res.json({ message: 'Incorrect username or password.' }) }
+    if (err) { return res.json(err) }
+    if (!user) { return res.json({ message: 'Incorrect username or password.' }) }
 
     User.verifyPassword(req.body.password, user.password, function(err, result){
       if(result) {
