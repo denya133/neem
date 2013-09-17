@@ -4,7 +4,7 @@ neem
 Node, express, ember and mongoose boilerplate
 
 This is a very simple little boilerplate with an express auth api (Bearer stragegy), and client side auth.
-It borrows HEAVILY from [The MEAN stack](https://github.com/linnovate/mean) and uses the code exmaples from [Eric Berry's blog post on Ember authentication](http://coderberry.me/blog/2013/07/08/authentication-with-emberjs-part-2/)
+It borrows HEAVILY from [The MEAN stack](https://github.com/linnovate/mean) and uses the code examples from [Eric Berry's blog post on Ember authentication](http://coderberry.me/blog/2013/07/08/authentication-with-emberjs-part-2/)
 
 ## Get Going
 
